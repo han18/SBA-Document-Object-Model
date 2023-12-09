@@ -22,8 +22,29 @@
       <input type="text" name="user-input" min="5" maxlength="10" placeholder="User Name" pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$" title="Enter a username starting with a capital letter alphabets, numbers or an underscore" required > 
       <!-- enter email name-->
       <input type="email" name="email-input" placeholder="Enter Email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
-
+      <!-- enter telephone name-->
       <input type="tel" name="tel-input" placeholder="Enter Phone Number" required>
+            <!-- enter radio choice-->
+            <label>
+              <h3>Do You Have a Garden</h3>
+              <input type="radio" name="choice-radio">
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="choice-radio">
+              No
+            </label>
+            <!--City Selector-->
+            <select class="selection" name="city-location">
+              <option>Select Your Borough</option>
+              <option value="bronx">Thee Bronx</option>
+              <option value="brooklyn">Brooklyn</option>
+              <option value="queens">Queens</option>
+              <option value="manhattan">Manhattan</option>
+            </select>
+            <br> <br><br>
+            <!--Submit Button-->
+   <button type="submit">Submit form</button>
 
 
 
