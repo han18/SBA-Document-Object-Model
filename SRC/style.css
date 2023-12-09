@@ -1,0 +1,7 @@
+/* style sheet for the SBA COM project */
+
+flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
