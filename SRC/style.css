@@ -10,10 +10,15 @@ body {
   background-color: rgb(219, 214, 224);
 }
 
-a {
+nav a {
   line-height: 3rem;
   padding: 0 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+}
+
+h2 {
+  color: green;
+  border: 5px solid blue;
 }

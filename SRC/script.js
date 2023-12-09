@@ -9,10 +9,15 @@ let menuLinks = [
   { text: "account", href: "/account" },
 ];
 
-// creating the menu bar
+// creating the menu bar.. id in the html
 const navMenu = document.getElementById("menu");
 navMenu.style.backgroundColor = "#CD5C5C";
 navMenu.style.height = "100%";
+navMenu.classList.add("flex-around");
+// creating a logo but I'll fix it later
+// const logo = document.createElement("h2");
+// logo.innerHTML = "This is a LoGO";
+// navMenu.appendChild(logo);
 
 // creating an anchor element for the navbar
 for (let x = 0; x < menuLinks.length; x++) {

@@ -13,6 +13,21 @@
         <nav id="menu"></nav>    
     </header>
     <h1>Welcome to the Festival Garden</h1>
+    <form>
+      <!-- enter first name-->
+      <input type="text" name="first-input" placeholder="Enter First Name" required > 
+      <!-- enter last name-->
+      <input type="text" name="last-input" placeholder="Enter Last Name" required>
+      <!-- enter user name-->
+      <input type="text" name="user-input" min="5" maxlength="10" placeholder="User Name" pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$" title="Enter a username starting with a capital letter alphabets, numbers or an underscore" required > 
+      <!-- enter email name-->
+      <input type="email" name="email-input" placeholder="Enter Email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+
+      <input type="tel" name="tel-input" placeholder="Enter Phone Number" required>
+
+
+
+    </form>
    
 
     </nav>
