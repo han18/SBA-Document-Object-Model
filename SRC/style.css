@@ -22,3 +22,14 @@ h2 {
   color: green;
   border: 5px solid blue;
 }
+
+form {
+  border: 20px solid blue;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}

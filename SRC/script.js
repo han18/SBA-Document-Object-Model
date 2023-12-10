@@ -21,9 +21,18 @@ navMenu.classList.add("flex-around");
 
 // creating an anchor element for the navbar
 for (let x = 0; x < menuLinks.length; x++) {
-  // creating new element a into the nav menu
+  // creating new element a tag into the nav menu
   const aLink = document.createElement("a");
   aLink.setAttribute("href", menuLinks[x].href);
   aLink.innerHTML = menuLinks[x].text;
   navMenu.appendChild(aLink);
 }
+
+// validating the form
+const formVal = document.getElementById("form-validation");
+// const buttonSub = document.getElementById("button-submit");
+
+formVal.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("the form has been submitted successfully");
+});
