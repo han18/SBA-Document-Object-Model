@@ -15,66 +15,68 @@
     <!-- The End Of The Header-->
     <h1>Welcome to the Festival Garden</h1>
     <!-- The Beginning of the Form-->
-    <h2 class="message-output">This is a message</h2>
-    <form id="form-validation">
-      <!-- enter first name-->
-      <input
-        type="text"
-        name="first-input"
-        placeholder="Enter First Name"
-        required
-      />
-      <!-- enter last name-->
-      <input
-        type="text"
-        name="last-input"
-        placeholder="Enter Last Name"
-        required
-      />
-      <!-- enter user name-->
-      <input
-        type="text"
-        name="user-input"
-        min="5"
-        maxlength="10"
-        placeholder="User Name"
-        pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$"
-        title="Enter a username starting with a capital letter alphabets, numbers or an underscore"
-        required
-      />
-      <!-- enter email name-->
-      <input
-        type="email"
-        name="email-input"
-        placeholder="Enter Email"
-        pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-        required
-      />
-      <!-- enter telephone name-->
-      <input
-        type="tel"
-        name="tel-input"
-        placeholder="Enter Phone Number"
-        required
-      />
-      <!-- enter radio choice-->
-      <h5>Do You Have a Garden</h5>
-      <label>
-        <input type="radio" name="choice-radio" required />
-        Yes
-        <input type="radio" name="choice-radio" required />
-        No
-      </label>
-      <!--City Option Selector-->
-      <select class="selection" name="city-location">
-        <option>Select Your Borough</option>
-        <option value="bronx">Thee Bronx</option>
-        <option value="brooklyn">Brooklyn</option>
-        <option value="queens">Queens</option>
-        <option value="manhattan">Manhattan</option>
-      </select>
-      <!--Submit Button-->
-      <button id="button-submit" type="submit">Submit Form</button>
-    </form>
+    <h2 class="message-output"></h2>
+    <div class="container">
+      <form id="form-validation">
+        <!-- enter first name-->
+        <input
+          type="text"
+          name="first-input"
+          placeholder="Enter First Name"
+          required
+        />
+        <!-- enter last name-->
+        <input
+          type="text"
+          name="last-input"
+          placeholder="Enter Last Name"
+          required
+        />
+        <!-- enter user name-->
+        <input
+          type="text"
+          name="user-input"
+          min="5"
+          maxlength="10"
+          placeholder="User Name"
+          pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$"
+          title="Enter a username starting with a capital letter alphabets, numbers or an underscore"
+          required
+        />
+        <!-- enter email name-->
+        <input
+          type="email"
+          name="email-input"
+          placeholder="Enter Email"
+          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+          required
+        />
+        <!-- enter telephone name-->
+        <input
+          type="tel"
+          name="tel-input"
+          placeholder="Enter Phone Number"
+          required
+        />
+        <!-- enter radio choice-->
+        <h5>Do You Have a Garden</h5>
+        <label>
+          <input class="raido1" type="radio" name="choice-radio" required />
+          Yes
+          <input class="raido1" type="radio" name="choice-radio" required />
+          No
+        </label>
+        <!--City Option Selector-->
+        <select class="selection" name="city-location">
+          <option>Select Your Borough</option>
+          <option value="bronx">Thee Bronx</option>
+          <option value="brooklyn">Brooklyn</option>
+          <option value="queens">Queens</option>
+          <option value="manhattan">Manhattan</option>
+        </select>
+        <!--Submit Button-->
+        <button id="button-submit" type="submit">Submit Form</button>
+      </form>
+    </div>
   </body>
 </html>

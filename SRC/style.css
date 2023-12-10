@@ -1,6 +1,4 @@
-/* style sheet for the SBA COM project */
-
-flex-around {
+style sheet for the SBA COM project flex-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,13 +21,37 @@ h2 {
   border: 5px solid blue;
 }
 
-form {
+.container {
   border: 20px solid blue;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* min-height: 100vh; vh stands for viewport height */
+}
+
+form {
+  border: 5px solid rgb(23, 23, 30);
   width: 600px;
   height: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin: 30px;
+}
+
+input {
+  border: 4px solid green;
+  margin: 10px;
+  height: 40px;
+  width: 300px;
+}
+
+label {
+  border: 4px solid green;
+}
+
+.raido1 {
+  color: blue;
+  border: 3px solid pink;
 }

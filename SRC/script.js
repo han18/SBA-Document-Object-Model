@@ -27,7 +27,7 @@ for (let x = 0; x < menuLinks.length; x++) {
   aLink.innerHTML = menuLinks[x].text;
   navMenu.appendChild(aLink);
 }
-
+// =============== here is the form validation part
 // validating the form
 // const formVal = document.getElementById("form-validation");
 
@@ -37,23 +37,35 @@ for (let x = 0; x < menuLinks.length; x++) {
 // });
 
 // validating the form and clearing the input fields
-
+let output = document.querySelector(".message-output");
 const formReset = document.getElementById("form-validation");
 formReset.addEventListener("submit", (e) => {
   e.preventDefault();
   formReset.reset();
+  output.innerHTML += "The Form is submitted successfully!";
 });
 
-let output = document.querySelector(".message-output");
-
-output.addEventListener("click", () => {
-  output.style.backgroundColor = "pink";
-  output.textContent = "WE ARE SO REAL";
-});
-
-// const clickButton = document.getElementById('"button-submit"');
+//  const clickButton = document.getElementById("button-submit");
+//   //////// I stopped here... the form didn't display a message
 // clickButton.addEventListener("click", () => {
-//   outputs.textContent = "HHHHHHHHHHHH";
+//   clickButton.textContent = "HHHHHHHHHHHH";
+//
+//   output.textContent = "GGGGGGGGGGGGGG";
+// showing a message to the user
+// const buttonInput = document.getElementById("button-submit");
+// let output = document.querySelector(".message-output");
+
+// output.addEventListener("click", () => {
+//   output.style.backgroundColor = "pink";
+//   output.style.color = "red";
+//   buttonInput.textContent = "WE ARE SO REAL";
+// });
+
+// const clickButton = document.getElementById("button-submit");
+// clickButton.addEventListener("submit", () => {
+//   // clickButton.textContent = "HHHHHHHHHHHH";
+//   // let output = document.querySelector(".message-output");
+//   // output.textContent = "GGGGGGGGGGGGGG";
 // });
 
 // outputs.innerHTML += "Yes Your Form has been submitted";
