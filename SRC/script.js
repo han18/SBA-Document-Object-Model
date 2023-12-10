@@ -29,10 +29,36 @@ for (let x = 0; x < menuLinks.length; x++) {
 }
 
 // validating the form
-const formVal = document.getElementById("form-validation");
-// const buttonSub = document.getElementById("button-submit");
+// const formVal = document.getElementById("form-validation");
 
-formVal.addEventListener("submit", (e) => {
+// formVal.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   alert("The form has been submitted successfully");
+// });
+
+// validating the form and clearing the input fields
+
+const formReset = document.getElementById("form-validation");
+formReset.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("the form has been submitted successfully");
+  formReset.reset();
 });
+
+let output = document.querySelector(".message-output");
+
+output.addEventListener("click", () => {
+  output.style.backgroundColor = "pink";
+  output.textContent = "WE ARE SO REAL";
+});
+
+// const clickButton = document.getElementById('"button-submit"');
+// clickButton.addEventListener("click", () => {
+//   outputs.textContent = "HHHHHHHHHHHH";
+// });
+
+// outputs.innerHTML += "Yes Your Form has been submitted";
+// function clearInputs(event) {
+//   const allInputs = document.querySelectorAll("input");
+//   allInputs.forEach((input) => (input.value = ""));
+//   outputs.textContent = "Yes Your Form has been submitted";
+// }
