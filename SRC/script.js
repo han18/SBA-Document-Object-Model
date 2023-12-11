@@ -11,7 +11,7 @@ let menuLinks = [
 
 // creating the menu bar.. id in the html
 const navMenu = document.getElementById("menu");
-navMenu.style.backgroundColor = "#CD5C5C";
+navMenu.style.backgroundColor = "#0f496b4d";
 navMenu.style.height = "100%";
 navMenu.classList.add("flex-around");
 // creating a logo but I'll fix it later
@@ -35,5 +35,5 @@ const formReset = document.getElementById("form-validation");
 formReset.addEventListener("submit", (e) => {
   e.preventDefault();
   formReset.reset();
-  output.innerHTML += "The Form is submitted successfully!";
+  output.innerHTML += "Form Submitted Successfully";
 });
