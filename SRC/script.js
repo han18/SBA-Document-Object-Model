@@ -31,5 +31,5 @@ const formReset = document.getElementById("form-validation");
 formReset.addEventListener("submit", (e) => {
   e.preventDefault();
   formReset.reset();
-  output.innerHTML += "Form Submitted Successfully";
+  output.innerHTML += "Form Submitted Successfully!";
 });
