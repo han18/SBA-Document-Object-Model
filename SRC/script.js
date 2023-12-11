@@ -14,10 +14,6 @@ const navMenu = document.getElementById("menu");
 navMenu.style.backgroundColor = "#0f496b4d";
 navMenu.style.height = "100%";
 navMenu.classList.add("flex-around");
-// creating a logo but I'll fix it later
-// const logo = document.createElement("h2");
-// logo.innerHTML = "This is a LoGO";
-// navMenu.appendChild(logo);
 
 // creating an anchor element for the navbar
 for (let x = 0; x < menuLinks.length; x++) {
