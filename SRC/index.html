@@ -38,7 +38,7 @@
           name="user-input"
           min="5"
           maxlength="10"
-          placeholder="User Name"
+          placeholder="Enter User Name"
           pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$"
           title="Enter a username starting with a capital letter alphabets, numbers or an underscore"
           required
@@ -51,6 +51,15 @@
           pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
           required
         />
+        <!--enter password -->
+        <input
+        type="password"
+        name="password-input"
+        placeholder="Enter Password"
+        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+        title="Minimum eight characters, at least one letter and one number:"
+        required
+      />
         <!-- enter telephone name-->
         <input
           type="tel"
@@ -59,12 +68,14 @@
           required
         />
         <!-- enter radio choice-->
-        <h5>Do You Have a Garden</h5>
-        <label>
-          <input class="raido1" type="radio" name="choice-radio" required />
-          Yes
-          <input class="raido1" type="radio" name="choice-radio" required />
-          No
+        <h3>Do You Have a Garden</h3>
+        <!-- <label>
+          <span>
+            <input class="raido" type="radio" name="choice-radio" required />
+            Yes
+            <input type="radio" name="choice-radio" required />
+            No
+          </span> -->
         </label>
         <!--City Option Selector-->
         <select class="selection" name="city-location">

@@ -1,11 +1,19 @@
-style sheet for the SBA COM project flex-around {
+/* style sheet for the SBA COM project  */
+
+flex-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 body {
-  background-color: rgb(219, 214, 224);
+  background: url("https://images.pexels.com/photos/837478/pexels-photo-837478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+    no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 nav a {
@@ -30,28 +38,56 @@ h2 {
 }
 
 form {
+  background: url("https://images.pexels.com/photos/837478/pexels-photo-837478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+    no-repeat center center fixed;
+  opacity: 0.5;
+
   border: 5px solid rgb(23, 23, 30);
   width: 600px;
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 30px;
+  margin: 10px;
+  padding: 10px;
 }
 
 input {
   border: 4px solid green;
-  margin: 10px;
   height: 40px;
   width: 300px;
 }
 
-label {
+/* input[type="radio"] {
+  border: 40px solid rgb(22, 184, 22);
+} */
+
+/* input :last-child {
+  border: 40px solid rgb(22, 184, 22);
+} */
+
+/* label {
   border: 4px solid green;
+  color: rgb(186, 161, 161);
+} */
+
+.radio {
+  color: blue;
+  border: 3px solid rgb(177, 39, 62);
 }
 
-.raido1 {
-  color: blue;
-  border: 3px solid pink;
+.selection {
+  border: 5px solid rgb(238, 237, 236);
+  height: 40px;
+  width: 300px;
+}
+
+#button-submit {
+  border: 5px solid rgb(238, 237, 236);
+  margin: 10px;
+  height: 50px;
+  width: 200px;
+  font-size: medium;
+  /* background-color: blueviolet; */
 }
